@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="13"
+    tools:context=".bai8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:text="Quản lý sinh viên" />
+
+    <EditText
+        android:id="@+id/edt_msv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Nhập mã sinh viên"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/edr_tensv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Nhập tên sinh viên" />
+
+    <EditText
+        android:id="@+id/edt_tinh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="chọn tỉnh" />
+
+    <EditText
+        android:id="@+id/edt_ngaysinhsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Nhập ngày sinh" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_them_sv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15px"
+            android:layout_weight="1"
+            android:text="Thêm" />
+        <Button
+            android:id="@+id/btn_xoa_sv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15px"
+            android:layout_weight="1"
+            android:text="Xóa" />
+        <Button
+            android:id="@+id/btn_sua_sv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15px"
+            android:layout_weight="1"
+            android:text="Sữa" />
+        <Button
+            android:id="@+id/btn_thoat_sv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15px"
+            android:layout_weight="1"
+            android:text="Thoát" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_crud_sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+
+
+</LinearLayout>

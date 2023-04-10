@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ttcn"
+    android:weightSum="5"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="9"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:text="thông tin cá nhân "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/teal_200"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edt_ho_va_ten"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableLeft="@drawable/baseline_edit_note_24"
+                android:hint="Họ và tên"
+                android:radius="25px" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:text="cmnd "-->
+            <!--                android:textStyle="bold"-->
+
+            <!--                android:layout_weight="2"/>-->
+            <EditText
+                android:id="@+id/edt_cmnd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableLeft="@drawable/baseline_edit_note_24"
+                android:hint="số cmnd"
+                android:inputType="number" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Bằng cấp "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/teal_200"
+            android:layout_weight="1"
+            />
+        <RadioGroup
+            android:id="@+id/rdo_group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Đại học"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Cao đẳng"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Trung cấp"
+                android:layout_weight="1"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Sở thích"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/Game_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="chơi game "
+                android:checked="false"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/Sach_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="Đọc sách"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/Bao_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="Đọc báo"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Thông tin khác "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/khacc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Thông tin khác"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="6"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="gui thong tin "
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/show_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/show_cmnd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/show_bangcap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/show_sothich"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/show_khac"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
+

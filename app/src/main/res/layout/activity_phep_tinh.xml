@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phep_tinh"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Thực Hiện Phép Tính "
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#FF8383"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/stn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:hint="Số Thứ Nhất "
+        android:inputType="number"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/sth"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:layout_height="0dp"
+        android:hint="Số Thứ Hai"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/cong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="+"/>
+        <Button
+            android:id="@+id/tru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:text="-"/>
+        <Button
+            android:id="@+id/nhan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="x"/>
+        <Button
+            android:id="@+id/chia"
+            android:layout_width="0dp"
+            android:textSize="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="/"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/kq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>
